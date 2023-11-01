@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Fale conosco!</title>
+</head>
+<body>
+    <header>
+        <header>
+            <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+    
+            <ul class="navegação">
+                <li><a href="visao_geral/index.html" target="_blank">Visão geral</a></li>
+                <li><a href="/cadastro/index.html">Cadastro</a></li>
+                <li><a href="#">Avaliações</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul><!--navegação-->
+    
+            <div class="header-icons">
+                <i class='bx bx-cart'><a href="/carrinho de compra/index.html" target="_blank"></a></i>
+                <div id="menu"><a href="dropbox.html"></a><i class='bx bx-menu'></i></div>
+            </div><!--header-icons-->
+        </header>
+    </header>
+    <section>
+        <h2>Contato</h2>
+        <form action="https://api.staticforms.xyz/submit" method="post">
+            <label>Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome" autocomplete="off" required>
+            <label>Email</label>
+            <input type="email" name="email" placeholder="Digite seu email" autocomplete="off" required>
+            <label>Mensagem</label>
+            <textarea name="message" cols="30" rows="10" placeholder="Digite sua mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <div class="main">
+        <div class="row">
+            <li><img src="/src/imgs/product1.png" onclick="slider('product1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="/src/imgs/product2.png" onclick="slider('product2.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="/src/imgs/product3.png" onclick="slider('product3.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+</body>
+</html>

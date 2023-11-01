@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <!-- or -->
+    <link rel="stylesheet"
+    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Pagamentos</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><i class='bx bx-headphone'></i>Soundbox</a>
+
+        <ul class="navegação">
+            <li><a href="visao_geral/index.html" target="_blank">Visão geral</a></li>
+            <li><a href="/cadastro/index.html">Cadastro</a></li>
+            <li><a href="#">Avaliações</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul><!--navegação-->
+
+        <div class="header-icons">
+            <i class='bx bx-cart'><a href="/compra/index.html"></a></i>
+            <div id="menu"><a href="dropbox.html"></a><i class='bx bx-menu'></i></div>
+        </div><!--header-icons-->
+    </header>
+<body>
+    <div class="container">
+        <h1>Pagamento</h1>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="nome-cartao">Nome no Cartão:</label>
+                <input type="text" id="nome-cartao" name="nome-cartao" required>
+            </div>
+            <div class="form-group">
+                <label for="numero-cartao">Número do Cartão:</label>
+                <input type="number" id="numero-cartao" name="numero-cartao" required>
+            </div>
+            <div class="form-group">
+                <label for="validade-cartao">Data de Validade:</label>
+                <input type="text" id="validade-cartao" name="validade-cartao" placeholder="MM/AA" required>
+            </div>
+            <div class="form-group">
+                <label for="cvv-cartao">CVV:</label>
+                <input type="number" id="cvv-cartao" name="cvv-cartao" required>
+            </div>
+            <div class="form-group">
+                <label for="valor">Valor a Pagar:</label>
+                <input type="number" id="valor" name="valor" required>
+            </div>
+            <div class="form-group">
+                <label for="forma-pagamento">Forma de Pagamento:</label>
+                <select id="forma-pagamento" name="forma-pagamento">
+                    <option value="cartao">Cartão de Crédito</option>
+                    <option value="boleto">Boleto Bancário</option>
+                </select>
+            </div>
+            <button type="submit">Pagar</button>
+        </form>
+    </div>
+ 
+    <div class="main">
+        <div class="row">
+            <li><img src="/src/imgs/product1.png" onclick="slider('product1.png')"></li>
+        </div><!--row-->
+
+        <div class="row2">
+            <li><img src="/src/imgs/product2.png" onclick="slider('product2.png')"></li>
+        </div><!--row2-->
+
+        <div class="row3">
+            <li><img src="/src/imgs/product3.png" onclick="slider('product3.png')"></li>
+        </div><!--row3-->
+    </div><!--main-->
+</body>
